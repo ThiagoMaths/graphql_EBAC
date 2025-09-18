@@ -66,7 +66,7 @@ handler.addInteractionHandler('Add category response', () => {
             path: '/api/addCategory',
             body: {
                 "name": like(newCategory),
-                "photo": 'https://www.zipmaster.com/wpcontent/uploads/2022/04/Reusable-Cloth-Shopping-Bags-RainbowPack-200-Case-Reusable-Bags-B26-061-3-1000x1000.jpg.webp'
+                "photo": 'https://www.zipmaster.com/wp-content/uploads/2024/04/Zippy-Tool-In-Use-1-768x768.jpg'
             }
         },
         response: {
@@ -77,7 +77,7 @@ handler.addInteractionHandler('Add category response', () => {
                 "data": {
                     "_id": like("66fc34a4c9760cdf2d965ee9"),
                     "name": like(newCategory),
-                    "photo": like('https://www.zipmaster.com/wpcontent/uploads/2022/04/Reusable-Cloth-Shopping-Bags-RainbowPack-200-Case-Reusable-Bags-B26-061-3-1000x1000.jpg.webp'),
+                    "photo": like('https://www.zipmaster.com/wp-content/uploads/2024/04/Zippy-Tool-In-Use-1-768x768.jpg'),
                     "createdAt": like("2024-10-01T17:43:00.445Z"),
                     "updatedAt": like("2024-10-01T17:43:00.445Z"),
                     "__v": 0
@@ -109,7 +109,7 @@ it('FRONT - Should add a category', async () => {
         .withHeaders('Authorization', token)
         .withJson({
             "name": newCategory,
-            "photo": 'https://www.zipmaster.com/wpcontent/uploads/2022/04/Reusable-Cloth-Shopping-Bags-RainbowPack-200-Case-Reusable-Bags-B26-061-3-1000x1000.jpg.webp'
+            "photo": 'https://www.zipmaster.com/wp-content/uploads/2024/04/Zippy-Tool-In-Use-1-768x768.jpg'
         })
         .expectStatus(200)
         .expectJson('success', true);

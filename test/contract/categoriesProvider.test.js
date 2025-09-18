@@ -40,7 +40,7 @@ it('API - Should add a category', async () => {
         .withHeaders('Authorization', token)
         .withJson({
             "name": newCategory,
-            "photo": 'https://www.zipmaster.com/wpcontent/uploads/2022/04/Reusable-Cloth-Shopping-Bags-RainbowPack-200-Case-Reusable-Bags-B26-061-3-1000x1000.jpg.webp'
+            "photo": 'https://www.zipmaster.com/wp-content/uploads/2024/04/Zippy-Tool-In-Use-1-768x768.jpg'
         })
         .expectStatus(200)
         .expectJson('success', true);
