@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Start services with Docker Compose
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Wait for services to be ready
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: Stop services
         if: always()
-        run: docker-compose down
+        run: docker compose down
 
       - name: Publish Test Report
         if: always()
