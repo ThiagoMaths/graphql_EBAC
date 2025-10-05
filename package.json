@@ -14,10 +14,12 @@
     "testContractConsumer:p": "mocha ./test/contract/productsConsumer.test.js",
     "testContractProvider:c": "mocha ./test/contract/categoriesProvider.test.js",
     "testContractConsumer:c": "mocha ./test/contract/categoriesConsumer.test.js"
+     "test": "mocha ./test/**/*.test.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=true,json=true"
   },
   "devDependencies": {
     "@faker-js/faker": "^10.0.0",
     "mocha": "^11.7.2",
+    "mochawesome": "^7.1.4",
     "pactum": "^3.8.0"
   },
   "dependencies": {
