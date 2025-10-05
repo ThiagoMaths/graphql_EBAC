@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Start services with Docker Compose
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Wait for services to be ready
 

@@ -7,13 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js",
+    "testInit": "mocha ./test/**/*.test.js",
     "test:gql": "mocha ./test/graphql/*.test.js",
     "test:api": "mocha ./test/api/*.test.js",
     "testContractProvider:p": "mocha ./test/contract/productsProvider.test.js",
     "testContractConsumer:p": "mocha ./test/contract/productsConsumer.test.js",
     "testContractProvider:c": "mocha ./test/contract/categoriesProvider.test.js",
-    "testContractConsumer:c": "mocha ./test/contract/categoriesConsumer.test.js"
+    "testContractConsumer:c": "mocha ./test/contract/categoriesConsumer.test.js",
      "test": "mocha ./test/**/*.test.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=true,json=true"
   },
   "devDependencies": {
